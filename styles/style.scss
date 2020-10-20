@@ -1,3 +1,10 @@
+@font-face{
+    font-family: Sansation_Regular;
+    src: url(../fonts/Sansation_Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 $textColor: #fff;
 $linkhover: #01a124;
 
@@ -156,6 +163,7 @@ header {
             margin-bottom: 20px;
         }
         .box__text{
+            text-justify: center;
             color: $textColor;
             font-size: 14px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -179,8 +187,97 @@ header {
             background-color: $textColor;
             color: rgb(139, 139, 139);
             cursor: pointer;
+            border:  3px solid rgb(139, 139, 139);
         }
 
     }
 
+}
+
+main{
+
+    .aboutUs{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @media screen and(max-width: 1000px){
+            justify-content: center;
+        }
+        .aboutUs__photo{
+            width: 50%;
+            @media screen and(max-width: 1000px){
+                width: 100%;
+            }
+            .aboutUs__img{
+                width: 100%;
+            }
+        }
+        .aboutUs__text-section{
+            width: 45%;
+            margin-left: 50px;
+            margin-top: 70px;
+            font-family: Sansation_Regular;
+            @media screen and(max-width: 1000px){
+                width: 70%;
+            }
+            .text-section__heading{
+                text-transform: uppercase;
+                font-stretch: ultra-expanded;
+                font-weight: normal;
+                font-size: 35px;
+                letter-spacing: 3px;
+                padding-bottom: 15px;
+                border-bottom: 1px #000 solid;
+                max-width: 450px;
+                width: 100%;
+            }
+            .text-section__extra-line{
+                position: relative;
+                width: 85px;
+                border-top: 2px solid #000;
+            }
+            .text-section__text{
+                margin-top: 50px;
+                font-size: 16px;
+                max-width: 450px;
+                width: 100%;
+                letter-spacing: 1px;
+                font-stretch: ultra-expanded;
+                @media screen and(max-width: 1000px){
+                    max-width: 600px;
+                }
+                @media screen and(min-width: 1800px){
+                    max-width: 700px;
+                }
+            }
+            .text-section__button{
+                margin-top: 80px;
+                width: 180px;
+                padding: 8px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #05a0af;
+                color: $textColor;
+                font-family: Sansation_Regular;
+                font-size: 16px !important;
+
+            }
+
+            .text-section__button:hover{
+                cursor: pointer;
+                background-color: $textColor;
+                color: #05a0af;
+                border: 1px solid #05a0af;
+
+            }
+            .text-section__button:active{
+                border: none;
+                cursor: pointer;
+                background-color: #05a0af;
+                color: $textColor;
+                width: 175px;
+            }
+        }
+    }
 }
