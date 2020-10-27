@@ -640,7 +640,6 @@ main .feedback__wrapper .feedback__inner .feedback__slider-screen1 .feedback__it
 }
 main .clients__wrapper {
   width: 100%;
-  height: 80vh;
 }
 main .clients__wrapper .services__heading {
   width: 100%;
@@ -727,4 +726,210 @@ main .clients__wrapper .clients__inner .clients__item {
 }
 main .clients__wrapper .clients__inner .clients__item .item__link .clients__img {
   width: auto;
+}
+main .contact__wrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #097e89;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .contact__wrapper .contact__text-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 30%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: start;
+  font-family: Sansation_Regular;
+  color: #fff;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper .contact__text-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+main .contact__wrapper .contact__text-section .contact__subheading {
+  font-size: 30px;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper .contact__text-section .contact__subheading {
+    margin-top: 90px;
+  }
+}
+main .contact__wrapper .contact__text-section .contact__text {
+  font-size: 11px;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper .contact__text-section .contact__text {
+    margin-top: 20px;
+  }
+}
+main .contact__wrapper .contact__form-wrapper {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+main .contact__wrapper .contact__form-wrapper .contact__form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper .contact__form-wrapper .contact__form {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .contact__wrapper .contact__form-wrapper .contact__form .contact__input {
+  width: 200px;
+  height: 45px;
+  background-color: #097e89;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  padding-left: 10px;
+  margin-left: 0;
+  margin-right: -1px;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper .contact__form-wrapper .contact__form .contact__input {
+    margin-top: 30px;
+  }
+}
+main .contact__wrapper .contact__form-wrapper .contact__form .contact__input::placeholder {
+  color: #fff;
+}
+main .contact__wrapper .contact__form-wrapper .contact__form .contact__btn {
+  height: 47px;
+  width: 100px;
+  color: #097e89;
+  background-color: #fff;
+  border-radius: 2px;
+  border: 0;
+  font-family: Sansation_Regular;
+}
+@media screen and (max-width: 530px) {
+  main .contact__wrapper .contact__form-wrapper .contact__form .contact__btn {
+    margin-top: 30px;
+  }
+}
+main .contact__wrapper .contact__form-wrapper .contact__form .contact__btn:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #097e89;
+  border: 1px solid #fff;
+  font-weight: 600;
+}
+
+.footer__wrapper {
+  width: 100%;
+  background-color: #474747;
+  font-family: Sansation_Regular;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__wrapper .footer__left {
+  width: 50%;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer__wrapper .footer__left .left__col-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  color: #fff;
+}
+.footer__wrapper .footer__left .left__col-wrapper .col__subheading {
+  font-size: 23px;
+  text-transform: uppercase;
+}
+.footer__wrapper .footer__left .left__col-wrapper .col__underline {
+  width: 50px;
+  height: 1px;
+  border-top: 1px solid #fff;
+}
+.footer__wrapper .footer__left .left__col-wrapper .col__link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__wrapper .footer__left .left__col-wrapper .col__link .col__item {
+  margin-top: 30px;
+  font-weight: normal;
+}
+.footer__wrapper .footer__left .left__col-wrapper .col__link:hover {
+  color: #01a124;
+}
+.footer__wrapper .footer__right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 50px;
+}
+.footer__wrapper .footer__right .footer__form {
+  margin-top: 35px;
+}
+.footer__wrapper .footer__right .footer__form .footer__input {
+  height: 45px;
+  width: 260px;
+  padding-left: 15px;
+}
+.footer__wrapper .footer__right .footer__form .form__btn {
+  position: relative;
+  right: 125px;
+  color: #fff;
+  background-color: #0072bc;
+  padding: 15px 30px;
+  border: 0;
+}
+.footer__wrapper .footer__right .footer__form .form__btn:hover {
+  cursor: pointer;
+}
+.footer__wrapper .footer__right .footer__form .form__btn:active {
+  cursor: pointer;
+  padding: 13px 28px;
+}
+.footer__wrapper .footer__right .footer__networks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 35px;
+  margin-right: 120px;
+}
+.footer__wrapper .footer__right .footer__networks .networks__link {
+  text-decoration: none;
+  margin-top: 35px;
+  margin-right: 5px;
+}
+.footer__wrapper .footer__right .footer__networks .networks__link .footer__img {
+  height: 40px;
+  width: 40px;
 }
